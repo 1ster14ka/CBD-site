@@ -54,9 +54,29 @@ ul {
   align-items: center;
   height: 61px;
 }
+.header {
+  background-image: url(../img/pexels-cottonbro-3171837\ 1.jpg);
+  min-height: 844px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
 
-.header-icons {
-  fill: black;
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #101010;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.header .container {
+  position: relative;
+  z-index: 2;
 }
 
 .header-top-text {
@@ -74,7 +94,7 @@ ul {
 }
 
 .header-top-list-icons {
-  flex-grow: 1;
+  margin-right: 128px;
   align-items: flex-start;
   gap: 8px;
 }
@@ -125,97 +145,147 @@ ul {
   border-radius: 4px;
   width: 174px;
   height: 40px;
-}
-
-/* 
-.header-cont {
-  max-width: 1130px;
-  margin-left: auto;
-}
-
-.header-top-list {
-  display: flex;
-  width: 100%;
-  max-width: 1360px;
-  margin-left: auto;
-}
-
-.header-border {
-  border-bottom: 2px solid #979797;
-  width: 100%;
-  display: flex;
-  height: 61px;
-} */
-
-/* .header-top-list-icons {
-  align-items: flex-start;
-  display: flex;
-  gap: 8px;
-  max-width: 88px;
-} */
-
-/* .test {
-  display: flex;
-  gap: 128px;
-  width: 100%;
-  margin-left: 128px;
-  align-items: flex-start;
-}
-
-.header-top-list-user {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
-}
-
-.header-top-item {
-  flex-shrink: 0;
-}
-
-.header-top-item .logo {
-  margin-right: 76px;
-}
-.header-top-link {
-}
-.header-top-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.12;
-  color: #a76e00;
-}
-.header-user-link {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.22;
-  color: #a76e00;
-}
-.header-bot-list {
-  display: flex;
-  max-width: 1130px;
-  margin-left: auto;
-  margin-top: 17px;
-}
-.header-bot-list li:last-child() {
-  margin-right: 0px;
-}
-
-.header-bot-list li:nth-child(8) {
-  margin-right: 0px;
-}
-.heder-bot-item {
-  margin-right: 40px;
-  width: 79px;
-}
-.header-bot-link {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.22;
-  color: #a76e00;
-  width: 100%;
-}
-.input-user {
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid #979797;
   border-radius: 4px;
-  width: 174px;
-  height: 40px;
-  margin-left: 32px;
-} */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #979797;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.icon-user {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.header-hero {
+  max-width: 900px;
+  margin-left: auto;
+  padding-top: 80px;
+}
+
+.header-title {
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 1.32;
+  color: #fdfdfd;
+  margin-bottom: 32px;
+}
+
+.text-and-btn {
+  position: relative;
+}
+
+.header-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.28;
+  color: #979797;
+}
+
+.header-btn {
+  border: none;
+  border-bottom: 1px solid #3d3c39;
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 240px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #04867e;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+/* ---------------------- */
+.section-company {
+}
+.container-company {
+  padding-top: 80px;
+  padding-bottom: 48px;
+  display: flex;
+}
+.about-company {
+  display: flex;
+  flex-direction: column;
+  max-width: 786px;
+  margin-left: 20px;
+}
+.img-dance {
+  width: 210px;
+  height: 210px;
+}
+.company-title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.14;
+  color: #a76e00;
+  margin-bottom: 16px;
+}
+
+.company-text-subt {
+  max-width: 786px;
+  position: relative;
+  padding-left: 115px;
+}
+
+.company-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #3d3c39;
+}
+
+.about-company .company-text::before {
+  content: "";
+  border: 2px solid #a76e00;
+  width: 95px;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.company-btn {
+  border: none;
+  border-bottom: 1px solid #3d3c39;
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 240px;
+  height: 42px;
+  margin-left: auto;
+  background-color: #fdfdfd;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #04867e;
+}
+.second-company {
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.second-company .company-text {
+  margin-bottom: 32px;
+}
+.btn-chat {
+  border: 1px solid #3d3c39;
+  border-radius: 4px;
+  padding: 10px 43px;
+  margin-left: auto;
+  width: 240px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #04867e;
+}
