@@ -43,6 +43,7 @@ button {
   font-size: 56px;
   line-height: 1.14286;
   color: #a76e00;
+  padding: 8px;
 }
 
 .main-title-white {
@@ -50,6 +51,7 @@ button {
   font-size: 56px;
   line-height: 1.14;
   color: #fdfdfd;
+  padding: 8px;
 }
 
 .header {
@@ -274,6 +276,7 @@ button {
   position: absolute;
   left: 0;
   top: 50%;
+  transform: translateY(-50%);
 }
 .company-btn {
   border: none;
@@ -330,11 +333,13 @@ button {
 .meet-title::after {
   content: "";
   border: 2px solid #fdfdfd;
-  width: 382px;
+  max-width: 382px;
+  width: 100%;
   height: 0;
   position: absolute;
   top: 50%;
   right: 0;
+  transform: translateY(-50%);
 }
 .meet-list {
   display: flex;
