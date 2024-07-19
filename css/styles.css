@@ -732,3 +732,155 @@ button {
 
 .news-btn {
 }
+
+/* ----------------------------------------- */
+
+.footer {
+  padding-top: 64px;
+  background: #16392d;
+}
+.container {
+}
+.container-footer {
+}
+
+.footer-wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo-wrapp {
+  min-width: 163px;
+  max-height: 96px;
+  margin-right: auto;
+}
+.footer-logo {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1.25;
+  color: #da9d27;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer-logo-text {
+  font-weight: 600;
+  font-size: 10px;
+  color: #da9d27;
+  font-family: "Nunito", sans-serif;
+  width: 163px;
+}
+.footer-list-wrapp {
+  margin-left: auto;
+  /* width: 1070px; */
+  display: flex;
+  gap: 40px;
+  width: 1070px;
+}
+.list-bcd,
+.list-plan,
+.footer-list-service,
+.list-contacts {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.item-bcd-title,
+.item-plan-title,
+.item-service-title,
+.item-contacts-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #979797;
+  padding: 8px;
+}
+
+.item-plan-text,
+.item-bcd-text,
+.item-service-text,
+.item-contacts-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.125;
+  color: #979797;
+}
+
+.item-plan-text,
+.item-service-text,
+.item-contacts-text {
+  padding: 4px 8px;
+}
+
+.list-bcd {
+  min-width: 256px;
+}
+
+.item-bcd-text {
+  padding: 8px;
+  margin-bottom: 40px;
+  box-sizing: content-box !important;
+}
+.item-bcd-btn {
+  border: 1px solid #da9d27;
+  border-radius: 4px;
+  padding: 10px 8px;
+  width: 240px;
+  height: 42px;
+  background: #fdfdfd;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #a76e00;
+}
+.list-plan {
+  min-width: 184px;
+}
+.item-plan {
+}
+
+.item-plan-title {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.33333;
+  font-weight: 700;
+  font-size: 18px;
+  max-width: 167px;
+}
+.item-plan-text {
+}
+.footer-list-service {
+  min-width: 243px;
+}
+.footer-item-service {
+}
+.item-service-text {
+}
+.list-contacts {
+  min-width: 267px;
+}
+.item-contacts {
+}
+.item-contacts-text {
+}
+.footer-code-wrapp {
+}
+.footer-code {
+}
+.bottom-wrapp {
+}
+.bottom-list-left {
+}
+.bottom-item-left {
+}
+.bottom-text-left {
+}
+.bottom-list-right {
+}
+.bottom-item-rigth {
+}
+.bottom-text-right {
+}
